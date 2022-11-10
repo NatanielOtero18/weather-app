@@ -1,0 +1,77 @@
+
+.Clear {
+    background: url(assets/bgs/clearDay.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ClearNight {
+    background: url(assets/bgs/clearNight.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Rain {
+    background: url(assets/bgs/rain.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Clouds {
+    background: url(assets/bgs/cloud.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Thunderstorm {
+    background: url(assets/bgs/storm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Drizzle {
+    background: url(assets/bgs/Drizzle.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Snow {
+    background: url(assets/bgs/Snow.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Mist {
+    background: url(assets/bgs/mist.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainContainer{   
+    margin-top: 3.2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+}
+
+@media screen and (max-width:700px) {
+    .mainContainer{
+     margin-top: 50%;
+    }
+}

@@ -1,0 +1,94 @@
+
+@use "../shared" as s;
+
+.header {
+    position: fixed;
+       top: 0;
+       z-index: 1030;
+    width: 100%;
+    display:flex; 
+    min-width: 1000px;
+    justify-content: space-between;   
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.795);
+    color: whitesmoke;    
+    height: 1.5em; 
+    padding: 1em;
+    .titleContainer{        
+        h3{
+           
+            margin: 1em;
+            display: inline-block;
+            
+        }
+       
+        
+    }
+    .btnContainer{
+        margin-right: 3em;
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;        
+        background-color: rgba(255, 255, 255, 0.377);
+       .search{ width: 100%; 
+        display: flex;
+        flex-wrap: nowrap;                   
+        input{
+            width: 80%;
+            border: none !important;
+            border-color: transparent !important;
+            padding: 1em;
+        }
+       }
+        
+    }
+    
+   
+  }
+
+
+ 
+
+  @media screen and (max-width:700px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        .titleContainer{   
+            display: inline-block;
+            h3{
+                white-space: nowrap;               
+                margin: 4em;
+                margin-top: 50%; 
+                
+            }
+           
+            
+        }
+        .btnContainer{
+            margin: 0;            
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;        
+            background-color: rgba(158, 154, 154, 0.568);
+            padding: 0.5em;
+           .search{ width: 100%; 
+            display: flex;
+            flex-wrap: nowrap;                   
+            input{
+                width: 80%;
+                border: none !important;
+                border-color: transparent !important;
+                padding: 1em;
+            }
+           }
+            
+        }
+         
+    }
+   
+    
+}

@@ -1,0 +1,168 @@
+.fade {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.popUp {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-pop;
+          animation-name: animate-pop;
+}
+
+@-webkit-keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.slide {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-slide;
+          animation-name: animate-slide;
+}
+
+@-webkit-keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.delayOne {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delayTwo {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delayThree {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delayFour {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delayFive {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.forecastContainer {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  background-color: rgba(83, 83, 83, 0.5);
+  padding: 1em;
+}
+.forecastContainer .forecastTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1.5em;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: whitesmoke;
+}
+.forecastContainer .forecastTitle div {
+  padding: 0.2em;
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.forecastContainer .weatherCardContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.forecastContainer .weatherCardContainer .weatherCard {
+  color: whitesmoke;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.137);
+}
+.forecastContainer .weatherCardContainer .weatherCard img {
+  width: 100%;
+  height: 100%;
+}
+.forecastContainer .weatherCardContainer .weatherCard .forecastTemp {
+  font-size: 1em;
+}/*# sourceMappingURL=Forecast.module.css.map */

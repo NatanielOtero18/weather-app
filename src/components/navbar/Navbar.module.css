@@ -1,0 +1,198 @@
+.fade {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.popUp {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-pop;
+          animation-name: animate-pop;
+}
+
+@-webkit-keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.slide {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: animate-slide;
+          animation-name: animate-slide;
+}
+
+@-webkit-keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.delayOne {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delayTwo {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delayThree {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delayFour {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delayFive {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+  display: flex;
+  min-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: whitesmoke;
+  height: 1.5em;
+  padding: 1em;
+}
+.header .titleContainer h3 {
+  margin: 1em;
+  display: inline-block;
+}
+.header .btnContainer {
+  margin-right: 3em;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.377);
+}
+.header .btnContainer .search {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header .btnContainer .search input {
+  width: 80%;
+  border: none !important;
+  border-color: transparent !important;
+  padding: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .header .titleContainer {
+    display: inline-block;
+  }
+  .header .titleContainer h3 {
+    white-space: nowrap;
+    margin: 4em;
+    margin-top: 50%;
+  }
+  .header .btnContainer {
+    margin: 0;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(158, 154, 154, 0.568);
+    padding: 0.5em;
+  }
+  .header .btnContainer .search {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .header .btnContainer .search input {
+    width: 80%;
+    border: none !important;
+    border-color: transparent !important;
+    padding: 1em;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

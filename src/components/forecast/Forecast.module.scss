@@ -1,0 +1,60 @@
+@use "../shared" as s;
+
+@mixin titles {
+    background-color: rgba(0, 0, 0, 0.671);
+    color: whitesmoke;
+}
+
+$card-bg-color: rgba(0, 0, 0, 0.137);
+$card-font-color: whitesmoke;
+
+
+.forecastContainer {
+    display: grid;
+    
+    grid-template-rows: 1fr 4fr;
+    background-color: s.$component-bg-color;
+    padding: 1em;
+
+    .forecastTitle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 1.5em;
+        padding: 0.5em;
+        @include titles;
+
+        div {
+            padding: 0.2em;
+            margin-left: 0.5em;
+            font-size: 1.5em;
+            font-weight: 100;
+        }
+    }
+
+    .weatherCardContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+       
+
+        .weatherCard {           
+            color: $card-font-color;
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
+            background-color: $card-bg-color;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .forecastTemp {
+                font-size: 1em;
+            }
+
+        }
+    }
+}

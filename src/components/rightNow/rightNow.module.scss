@@ -1,0 +1,160 @@
+@use "../shared" as s;
+
+@mixin titles {
+    background-color: rgba(0, 0, 0, 0.671);
+    color: whitesmoke;
+}
+
+$card-bg-color: rgba(0, 0, 0, 0.137);
+$card-font-color: whitesmoke;
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    padding: 1em;
+}
+
+.title {
+    @include titles;
+
+    div {
+        margin-left: 1em;
+        font-size: 4em;
+        font-weight: 200;
+    }
+
+}
+
+
+.forecastContainer {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+
+    .forecastTitle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 1.5em;
+        padding: 0.5em;
+        @include titles;
+
+        div {
+            padding: 0.2em;
+            margin-left: 0.5em;
+            font-size: 1.5em;
+            font-weight: 100;
+        }
+    }
+
+    
+
+    .weatherCardContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .weatherCard {           
+            color: $card-font-color;
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
+            background-color: $card-bg-color;
+
+            .forecastTemp {
+                font-size: 2em;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+.conditions {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 1em;
+    flex-grow: 2;
+    background-color: s.$component-bg-color;
+    color: s.$component-font-color;
+
+    p {
+        font-size: 0.5em;
+    }
+
+}
+
+.item {
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 0.2em;
+
+}
+
+.seconContainer {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding: 1em;
+    gap: 1em;
+
+    .moreInfo {
+        font-size: 2.4em;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $card-bg-color;
+        color: $card-font-color;
+    }
+}
+
+
+
+.temperature {
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+    
+
+    .tempNumber {
+        padding: 0.2em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.2em;
+        font-size: 5em;
+        font-weight: 200;
+        color: $card-font-color;
+    }
+
+    .tempTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        @include titles;
+        font-size: 2em;
+    }
+
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: $card-bg-color;
+
+
+
+}

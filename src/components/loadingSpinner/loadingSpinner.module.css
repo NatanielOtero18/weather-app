@@ -1,0 +1,32 @@
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loadingSpinner {
+  width: 5em;
+  height: 5em;
+  border: 2em solid rgba(255, 255, 255, 0.493);
+  border-top: 2em solid rgba(0, 0, 0, 0.801);
+  border-radius: 50%;
+  -webkit-animation: spinner 1.5s linear infinite;
+          animation: spinner 1.5s linear infinite;
+}
+
+.spinnerContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}/*# sourceMappingURL=loadingSpinner.module.css.map */
