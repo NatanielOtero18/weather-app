@@ -70,8 +70,21 @@
    
 }
 
+.mainBody{
+    width: 100%;
+}
+
+
 @media screen and (max-width:700px) {
     .mainContainer{
      margin-top: 50%;
     }
 }
+
+@media screen and (max-width:400px) {
+    .mainContainer{
+     margin-top: 70%;
+    }
+}
+
+

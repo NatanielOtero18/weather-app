@@ -44,8 +44,17 @@
   grid-template-rows: 1fr 1fr;
 }
 
+.mainBody {
+  width: 100%;
+}
+
 @media screen and (max-width: 700px) {
   .mainContainer {
     margin-top: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainContainer {
+    margin-top: 70%;
   }
 }/*# sourceMappingURL=App.module.css.map */

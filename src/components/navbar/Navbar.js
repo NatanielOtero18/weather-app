@@ -18,7 +18,7 @@ const Navbar = (props)=>{
 
             <div className={styles.header}>               
                 <div className={styles.titleContainer}>
-                    <h3>My Wheater App</h3>
+                    <h3>My Weather App</h3>
                 </div>
                 <div className={styles.btnContainer}>    
                        <div className={styles.search}>

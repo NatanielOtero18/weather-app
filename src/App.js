@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet } from "react-helmet";
 
 
 import Navbar from './components/navbar/Navbar';
@@ -29,7 +30,7 @@ const App = props => {
 
 
   useEffect(() => {
-
+    window.getComputedStyle(document.body)
     if (navigator) {
       navigator.geolocation.getCurrentPosition(function (position) {
         setCurrentLat(position.coords.latitude);
@@ -130,26 +131,36 @@ const App = props => {
   }
 
   return (
-    <div>
-      <Navbar
-        search={search}
-        searchChangeHandler={searchChangeHandler}
-        searchLocationSubmit={searchLocationSubmit}
-        GeoLocateMe={GeoLocateMe}
-      />
+    <div className={styles.mainBody}>
+
+      <Helmet>
+        <title>Weather App</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1.00" maximum-scale="1.0" />
+      </Helmet>
       {
         loading ?
-          <div className={styles.mainContainer}>
-            <RightNow
 
-              currentWeather={currentWeather}
-              weatherHours={weatherHours}
-              forecastCity={forecastCity}
+          <div>
+            <Navbar
+              search={search}
+              searchChangeHandler={searchChangeHandler}
+              searchLocationSubmit={searchLocationSubmit}
+              GeoLocateMe={GeoLocateMe}
             />
-            <Forecast
-              forecast={forecast}
-            />
+
+            <div className={styles.mainContainer}>
+              <RightNow
+
+                currentWeather={currentWeather}
+                weatherHours={weatherHours}
+                forecastCity={forecastCity}
+              />
+              <Forecast
+                forecast={forecast}
+              />
+            </div>
           </div>
+
 
           : <LoadingSpinner />}
     </div>
